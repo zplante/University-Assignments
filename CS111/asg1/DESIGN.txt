@@ -1,0 +1,6 @@
+ASG 1 "A Simple Shell"
+by Zachary Plante (zplante)
+
+This program compiles with the command make and runs with the command 
+"./myshell".
+The program will then continue to loop and accept commands until exit is used.

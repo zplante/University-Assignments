@@ -1,0 +1,12 @@
+CS 112 Winter 18
+Instructor: W. Mackey
+Zac Plante (zplante)
+
+ASG - SMALLTALK - ASG3 -------------------------------------------------
+
+Submitted along with this README is a file titled hzip.st which can compress
+and uncompress a file based on the Huffman tree, as well as print the tree
+(activated by the -c, -u, and -t commands respectively). The tree function 
+works as written. The logic for the -c and -u functions should work, but
+difficulty with the given OutBits class was causing them to not run properly 
+on my machine.

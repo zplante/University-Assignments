@@ -1,0 +1,20 @@
+Zachary Plante, zplante
+CMPS112, W18, W Mackey, ASG 4
+Prolog TWZ Airlines 
+
+Submitted along with this read me is a file named functions.pl which contains
+the necessary code to turn database.pl and the .test files into the correct 
+output. This output takes the two airports in the .test files and uses the 
+database.pl file to construct a flight schedule to get from one airport to the 
+other.
+
+functions.pl does this by utilizing the haversine formula to calculate the 
+distance between airports, as well as recursize graph traversial techniques.
+
+functions.pl should work in all .test files, including those where the given airport is not in the data base.
+
+I am very proud of this one as I feel it is the best I have preformed all 
+quarter and shows my improvment.
+
+And finally, thank you to Prof Mackey and the TA's for a stressful but 
+insightful quarter. 

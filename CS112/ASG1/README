@@ -1,0 +1,8 @@
+Zachary Plante
+CruzID: zplante
+CMPS112
+ASG1 SBI.SCM
+
+Submitted with this read me is a SCHEME file desined to read in and interprit
+.sbir files. In its current form, it can only interprit some files (those with
+simpler syntax). It utilizes a funtion table, variable table, and lable table to read the .sbir files as well as a recursive reading method. 

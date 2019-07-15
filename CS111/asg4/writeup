@@ -1,0 +1,4 @@
+I used black box testing of inputs and outputs in order to test my file system
+I was unable to preform extensive tests of the effectiveness of 512 vs 8192 
+blocksizes, but what little i could gleam showed that 8192 did not have to read 
+as many blocks and could run faster, but 512 wasted less memory.

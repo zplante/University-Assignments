@@ -1,0 +1,32 @@
+GNU Prolog 1.4.4 (64 bits)
+Compiled Nov  6 2014, 18:04:28 with gcc
+By Daniel Diaz
+Copyright (C) 1999-2013 Daniel Diaz
+| ?- $Id: group1.tests,v 1.2 2016-11-21 14:06:16-08 - - $
+
+yes
+| ?- compiling /afs/cats.ucsc.edu/users/q/zplante/CS112/ASG4/database.pl for byte code...
+/afs/cats.ucsc.edu/users/q/zplante/CS112/ASG4/database.pl compiled, 76 lines read - 11163 bytes written, 8 ms
+
+(1 ms) yes
+| ?- compiling /afs/cats.ucsc.edu/users/q/zplante/CS112/ASG4/functions.pl for byte code...
+/afs/cats.ucsc.edu/users/q/zplante/CS112/ASG4/functions.pl:23-27: warning: singleton variables [DTime] for traveltime/2
+/afs/cats.ucsc.edu/users/q/zplante/CS112/ASG4/functions.pl:45:21: syntax error: , or ) expected
+/afs/cats.ucsc.edu/users/q/zplante/CS112/ASG4/functions.pl:53-55: warning: singleton variables [ATime,ATIme] for withinday/1
+/afs/cats.ucsc.edu/users/q/zplante/CS112/ASG4/functions.pl:65-70: warning: singleton variables [DTime,Atime] for schedueler/5
+/afs/cats.ucsc.edu/users/q/zplante/CS112/ASG4/functions.pl:71-75: warning: singleton variables [Destination,DTime,Atime,List] for schedueler/5
+/afs/cats.ucsc.edu/users/q/zplante/CS112/ASG4/functions.pl:76-78: warning: singleton variables [ATime,Destination,Visited,List] for (',')/2
+/afs/cats.ucsc.edu/users/q/zplante/CS112/ASG4/functions.pl:88:16: syntax error: unexpected tab
+	2 error(s)
+compilation failed
+
+no
+| ?- 
+uncaught exception: error(existence_error(procedure,fly/2),top_level/0)
+| ?- 
+uncaught exception: error(existence_error(procedure,fly/2),top_level/0)
+| ?- 
+uncaught exception: error(existence_error(procedure,fly/2),top_level/0)
+| ?- 
+uncaught exception: error(existence_error(procedure,fly/2),top_level/0)
+| ?- 

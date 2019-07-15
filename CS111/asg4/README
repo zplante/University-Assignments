@@ -1,0 +1,7 @@
+Code for a FAT file system for asg4 of CS111 Fall 18
+make generates two executables: init_file and Fatsys
+./init_file disc.img x y 
+this creates the disc image file, where x is the block size and y is the file
+size
+./Fatsys z
+mounts the file system to run, where z is the directory to mount it at

@@ -1,0 +1,22 @@
+ASG 2
+Zachary Plante
+zplante
+CS112 W18
+
+
+The submitted files amount to the function of  a desk calulator, written in 
+OCAML. 
+
+Included in this submition are the files Makefile, bigint.ml, bigint.mli 
+maindc.ml, and scanner.mll.
+
+Makefile, bigint.mli, and scanner.mll were written by Wesley Mackey.
+
+bigint.ml and maindc.ml were written by Wesley Mackey but edited by myself to 
+include funtions not originally programmed. These include subtraction, 
+multiplication, division, exponentials and modulo in bigint.ml and load and 
+store in maindc.ml
+
+These functions were based on code also provided by W. Mackey, but were ajusted to account for the new bigint data type created for this assignment.
+
+All functions should work as expected, including + - * / % ^ c d f p l s.
