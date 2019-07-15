@@ -1,0 +1,2 @@
+Grade: 22/20
+Notes: All validity, find and attacks work, pawns work

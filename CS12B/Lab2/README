@@ -1,0 +1,6 @@
+This directory for lab 2 contains 7 files for the assignment
+It contains FileCopy.java and FileTokens.java, which are copied from the instructions
+It contains FileReverse.java, which is adapted from FileTokens.java and designed to print the tokens of a file in reverse using the method stringReverse(String s)
+It contains the Makefile for FileReverse.java
+It contains in.txt to test FileReverse.java and out.txt which is out generated
+And finally it contains this README file

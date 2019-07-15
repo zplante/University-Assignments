@@ -1,0 +1,4 @@
+Grade: 14/20
+Notes: Everything except checkmate, can't handle board of size 10 (-2)
+
+Late by 0.0 hours

@@ -1,0 +1,3 @@
+Grade: 3/10
+Explanation:
+Output is not correct (-7). This could be due to output formatting errors (ie. spelling - spacing - etc) or incorrect input processing. The offending line is listed below - with the correct answer below it Incorrect Line : 55 is presentCorrect Answer : 55 present
