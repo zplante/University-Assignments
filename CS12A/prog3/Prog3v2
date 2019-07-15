@@ -1,0 +1,247 @@
+Script started on Sun 06 Nov 2016 10:07:50 PM PST
+[?1034hbash-4.2$ cat Craps.java
+import java.util.Random;
+import java.util.Scanner;
+
+public class Craps {
+
+	public static void main(String[] args) {
+		//Assignment 3
+		//Zachary Plante, zplante
+		//This program simulates a game of craps for the user, allowing them to set their own seed and bets
+		int pool;
+		int seed;
+		boolean gameend;
+		
+		Scanner user = new Scanner(System.in);
+		
+		//lets user set betting pool and seed
+		System.out.println("Welcom to craps! How many chips would you like?");
+		pool = user.nextInt();
+		System.out.println("You are playing with "+pool+" chip(s). Set the seed");
+		seed = user.nextInt();
+		Random ran = new Random(seed);
+		//loop runs games until the user is out of money
+		while(pool>0){
+			int bet;
+			int die1;
+			int die2;
+			int sum;
+			int point;
+			gameend=false;
+			
+			//takes bet
+			System.out.println("How much would you like to bet?");
+			bet=user.nextInt();
+			while(bet>pool){
+				System.out.println("Invalid bet, you only have "+pool+" chips");
+				bet=user.nextInt();
+			}
+			
+			System.out.println("Press enter to roll");
+			//simulates roll of dice and returns dice to the user
+			user.nextLine();
+			die1=ran.nextInt(6)+1;
+			die2=ran.nextInt(6)+1;
+			sum=die1+die2;
+			System.out.println("You rolled "+die1+", "+die2);
+			
+			//checks win/loose conditions
+			if(sum==7||sum==11){
+				//adds bet to pool and returns new pool
+				pool+=bet;
+				System.out.println("You won! You now have "+pool+" chips!");
+			
+			} else if(sum==2||sum==3||sum==12){
+				//removes bet from pool and returns new pool
+				pool-=bet;
+				System.out.println("You lost. You now have "+pool+" chips");
+			
+			}else{
+				point=sum;
+				//while loop continues until win/loose condition is met
+				
+				while(!gameend){
+					System.out.println("The point is "+point+". Roll again");
+					user.nextLine();
+					die1=ran.nextInt(6)+1;
+					die2=ran.nextInt(6)+1;
+					sum=die1+die2;
+					System.out.println("You rolled "+die1+", "+die2);
+					
+					if(sum==7){
+						//loose condition
+						pool-=bet;
+						gameend=true;
+						System.out.println("You lost. You now have "+pool+" chips");
+					
+					}else if(sum==point){
+						//win condition
+						pool+=bet;
+						gameend=true;
+						System.out.println("You won! You now have "+pool+" chips!");
+					}
+				}
+			}
+		}
+	}
+
+}
+
+bash-4.2$ cat G[KCrapsSim.java
+import java.util.Random;
+import java.util.Scanner;
+
+public class CrapsSim {
+
+	public static void main(String[] args) {
+		//Assignment 3
+		//Zachary Plante, zplante
+		//This Program runs a user inputed number of games of craps and returns the probability of winning
+		
+		Scanner user= new Scanner(System.in);
+		System.out.println("How many games would you like to simulate?");
+		
+		//number of games to simulate
+		int runs=user.nextInt();
+		int wins=0;
+		
+		//loop runs the games(modified code from part 1)
+		for(int i = 1;i<=runs; i++){
+		
+			boolean gameend;
+			
+			Random ran = new Random();
+				int die1;
+				int die2;
+				int sum;
+				int point;
+				gameend=false;
+				die1=ran.nextInt(6)+1;
+				die2=ran.nextInt(6)+1;
+				sum=die1+die2;
+				
+				if(sum==7||sum==11){
+					//tracks wins
+					wins++;
+				
+				} else if(sum==2||sum==3||sum==12){
+					gameend=true;
+				
+				}else{
+					point=sum;
+					
+					while(!gameend){
+						die1=ran.nextInt(6)+1;
+						die2=ran.nextInt(6)+1;
+						sum=die1+die2;
+						
+						if(sum==7){
+							gameend=true;
+						
+						}else if(sum==point){
+							//tracks wins
+							wins++;
+							gameend=true;
+						}
+					}
+				}
+			}
+		
+		//calculate probability of winning
+		double prob = (double)wins/(double)runs;
+		//returns odds of winning
+		System.out.println("Probability of winning: "+prob);
+	
+	
+	}
+		
+		
+	}
+
+
+
+bash-4.2$ javac Craps.java
+bash-4.2$ javac CrapsSim.java
+bash-4.2$ java Craps
+Welcom to craps! How many chips would you like?
+100
+You are playing with 100 chip(s). Set the seed
+4321
+How much would you like to bet?
+10
+Press enter to roll
+You rolled 6, 1
+You won! You now have 110 chips!
+How much would you like to bet?
+20
+Press enter to roll
+You rolled 6, 4
+The point is 10. Roll again
+
+You rolled 3, 1
+The point is 10. Roll again
+
+You rolled 1, 2
+The point is 10. Roll again
+
+You rolled 4, 6
+You won! You now have 130 chips!
+How much would you like to bet?
+50
+Press enter to roll
+You rolled 5, 2
+You won! You now have 180 chips!
+How much would you like to bet?
+180
+Press enter to roll
+You rolled 5, 3
+The point is 8. Roll again
+
+You rolled 3, 5
+You won! You now have 360 chips!
+How much would you like to bet?
+360
+Press enter to roll
+You rolled 6, 1
+You won! You now have 720 chips!
+How much would you like to bet?
+400
+Press enter to roll
+You rolled 5, 1
+The point is 6. Roll again
+
+You rolled 4, 6
+The point is 6. Roll again
+
+You rolled 2, 4
+You won! You now have 1120 chips!
+How much would you like to bet?
+500
+Press enter to roll
+You rolled 1, 6
+You won! You now have 1620 chips!
+How much would you like to bet?
+1620
+Press enter to roll
+You rolled 2, 2
+The point is 4. Roll again
+
+You rolled 5, 2
+You lost. You now have 0 chips
+bash-4.2$ java CrapsSim
+How many games would you like to simulate?
+10
+Probability of winning: 0.3
+bash-4.2$ java CrapsSim.ja[K[K[K
+How many games would you like to simulate?
+100
+Probability of winning: 0.46
+bash-4.2$ java CrapsSim
+How many games would you like to simulate?
+1000
+Probability of winning: 0.499
+bash-4.2$ exit
+exit
+
+Script done on Sun 06 Nov 2016 10:11:10 PM PST

@@ -1,0 +1,15 @@
+"I have read and understood the Academic Misconduct Policy for
+    Undergraduates, the related sections 102.01-102.016 and 105.15 of the
+    UC Santa Cruz Student Policies and Regulations Handbook,
+    and the related sections of the class syllabus."
+
+-Zachary Plante
+
+"I wrote this assignment using only permitted sources
+       that do not require citation, according to the syllabus."
+
+This program is designed to to input a file repersenting a graph and print the adjacency list as well as a chart showing the dTime, fTime, color, and parent of each node, as well as the same for the inverted matrix, as part of the SCC algorithim.
+
+This program compiles with the command make (using a makefile) and takes up to two command line arguments: a file and an optional flag "-U" denoting an undirected graph.
+
+The test case in.txt is designed to output an identical output to the one in ho10.
