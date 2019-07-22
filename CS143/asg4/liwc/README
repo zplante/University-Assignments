@@ -1,0 +1,1 @@
+the three files you want are asg4-part1.2.py, asg4-part2.2.py, and restaurant-competition-P2.py. All of them take two inputs, the file to read from and the file to write to. The must be preceded by -r and -p respectively.

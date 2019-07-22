@@ -1,0 +1,33 @@
+Features Set	# of Features	Model	Accuracy	Dataset
+words no bin	32				NB		0.68		dev
+words no bin	64				NB		0.75		dev
+words no bin	128				NB		0.81		dev
+words no bin	256				NB		0.81		dev
+words no bin	512				NB		0.78		dev
+words no bin	1024			NB		0.78		dev
+words no bin	2048			NB		0.78		dev
+words no bin	4096			NB		0.81		dev
+words no bin	8192			NB		0.84		dev
+words no bin	16384			NB		*0.85*		dev
+words bin		32				NB		0.67		dev
+words bin		64				NB		0.73		dev
+words bin		128				NB		0.81		dev
+words bin		256				NB		0.79		dev
+words bin		512				NB		0.77		dev
+words bin		1024			NB		0.76		dev
+words bin		2048			NB		0.76		dev
+words bin		4096			NB		0.80		dev
+words bin		8192			NB		0.83		dev
+words bin		16384			NB		0.84		dev
+
+
+
+Feature Set			Model	Dataset	Accuracy
+words no bin 16384	nb_sk	dev		0.74
+words no bin 16384	nb_sk	test	0.73
+words no bin 16384	dt_sk	dev		0.76
+words no bin 16384	dt_sk	test	0.69
+words no bin 16384	svm 	dev		0.54
+words no bin 16384	svm 	test	0.54
+words no bin 16384	svm_we	dev		0.72
+words no bin 16384	svm_we	test	0.71

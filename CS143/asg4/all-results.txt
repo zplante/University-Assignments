@@ -1,0 +1,445 @@
+Using word_features
+dev_examples.tsv
+
+The accuracy of dev_examples.tsv is: 0.8607142857142858
+Confusion Matrix:
+         |   n   p |
+         |   e   o |
+         |   g   s |
+         |   a   i |
+         |   t   t |
+         |   i   i |
+         |   v   v |
+         |   e   e |
+---------+---------+
+negative |<131>  9 |
+positive |  30<110>|
+---------+---------+
+(row = reference; col = test)
+
+dataset_examples.tsv
+
+The accuracy of dev_examples.tsv is: 0.9410201912858661
+Confusion Matrix:
+         |   n   p |
+         |   e   o |
+         |   g   s |
+         |   a   i |
+         |   t   t |
+         |   i   i |
+         |   v   v |
+         |   e   e |
+---------+---------+
+negative |<920> 21 |
+positive |  90<851>|
+---------+---------+
+(row = reference; col = test)
+
+Using word_pos_features
+dev_examples.tsv
+
+The accuracy of dev_examples.tsv is: 0.7392857142857143
+Confusion Matrix:
+         |   n   p |
+         |   e   o |
+         |   g   s |
+         |   a   i |
+         |   t   t |
+         |   i   i |
+         |   v   v |
+         |   e   e |
+---------+---------+
+negative |<131>  9 |
+positive |  64 <76>|
+---------+---------+
+(row = reference; col = test)
+
+dataset_examples.tsv
+
+The accuracy of dev_examples.tsv is: 0.9107332624867163
+Confusion Matrix:
+         |   n   p |
+         |   e   o |
+         |   g   s |
+         |   a   i |
+         |   t   t |
+         |   i   i |
+         |   v   v |
+         |   e   e |
+---------+---------+
+negative |<924> 17 |
+positive | 151<790>|
+---------+---------+
+(row = reference; col = test)
+
+Using word_pos_liwc_features
+dev_examples.tsv
+
+The accuracy of dev_examples.tsv is: 0.7785714285714286
+Confusion Matrix:
+         |   n   p |
+         |   e   o |
+         |   g   s |
+         |   a   i |
+         |   t   t |
+         |   i   i |
+         |   v   v |
+         |   e   e |
+---------+---------+
+negative |<126> 14 |
+positive |  48 <92>|
+---------+---------+
+(row = reference; col = test)
+
+dataset_examples.tsv
+
+The accuracy of dev_examples.tsv is: 0.9128586609989373
+Confusion Matrix:
+         |   n   p |
+         |   e   o |
+         |   g   s |
+         |   a   i |
+         |   t   t |
+         |   i   i |
+         |   v   v |
+         |   e   e |
+---------+---------+
+negative |<901> 40 |
+positive | 124<817>|
+---------+---------+
+(row = reference; col = test)
+
+Using only_liwc
+dev_examples.tsv
+
+The accuracy of dev_examples.tsv is: 0.625
+Confusion Matrix:
+         |   n   p |
+         |   e   o |
+         |   g   s |
+         |   a   i |
+         |   t   t |
+         |   i   i |
+         |   v   v |
+         |   e   e |
+---------+---------+
+negative | <61> 79 |
+positive |  26<114>|
+---------+---------+
+(row = reference; col = test)
+
+dataset_examples.tsv
+
+The accuracy of dev_examples.tsv is: 0.6211477151965994
+Confusion Matrix:
+         |   n   p |
+         |   e   o |
+         |   g   s |
+         |   a   i |
+         |   t   t |
+         |   i   i |
+         |   v   v |
+         |   e   e |
+---------+---------+
+negative |<390>551 |
+positive | 162<779>|
+---------+---------+
+(row = reference; col = test)
+
+Using word_features
+dev_examples.tsv
+
+The accuracy of dev_examples.tsv is: 0.8642857142857143
+Confusion Matrix:
+         |   n   p |
+         |   e   o |
+         |   g   s |
+         |   a   i |
+         |   t   t |
+         |   i   i |
+         |   v   v |
+         |   e   e |
+---------+---------+
+negative |<132>  8 |
+positive |  30<110>|
+---------+---------+
+(row = reference; col = test)
+
+dataset_examples.tsv
+
+The accuracy of dev_examples.tsv is: 0.9415515409139213
+Confusion Matrix:
+         |   n   p |
+         |   e   o |
+         |   g   s |
+         |   a   i |
+         |   t   t |
+         |   i   i |
+         |   v   v |
+         |   e   e |
+---------+---------+
+negative |<920> 21 |
+positive |  89<852>|
+---------+---------+
+(row = reference; col = test)
+
+Using word_pos_features
+dev_examples.tsv
+
+The accuracy of dev_examples.tsv is: 0.7571428571428571
+Confusion Matrix:
+         |   n   p |
+         |   e   o |
+         |   g   s |
+         |   a   i |
+         |   t   t |
+         |   i   i |
+         |   v   v |
+         |   e   e |
+---------+---------+
+negative |<131>  9 |
+positive |  59 <81>|
+---------+---------+
+(row = reference; col = test)
+
+dataset_examples.tsv
+
+The accuracy of dev_examples.tsv is: 0.9160467587672688
+Confusion Matrix:
+         |   n   p |
+         |   e   o |
+         |   g   s |
+         |   a   i |
+         |   t   t |
+         |   i   i |
+         |   v   v |
+         |   e   e |
+---------+---------+
+negative |<922> 19 |
+positive | 139<802>|
+---------+---------+
+(row = reference; col = test)
+
+Using word_pos_liwc_features
+dev_examples.tsv
+
+The accuracy of dev_examples.tsv is: 0.775
+Confusion Matrix:
+         |   n   p |
+         |   e   o |
+         |   g   s |
+         |   a   i |
+         |   t   t |
+         |   i   i |
+         |   v   v |
+         |   e   e |
+---------+---------+
+negative |<124> 16 |
+positive |  47 <93>|
+---------+---------+
+(row = reference; col = test)
+
+dataset_examples.tsv
+
+The accuracy of dev_examples.tsv is: 0.9133900106269925
+Confusion Matrix:
+         |   n   p |
+         |   e   o |
+         |   g   s |
+         |   a   i |
+         |   t   t |
+         |   i   i |
+         |   v   v |
+         |   e   e |
+---------+---------+
+negative |<896> 45 |
+positive | 118<823>|
+---------+---------+
+(row = reference; col = test)
+
+Using only_liwc
+dev_examples.tsv
+
+The accuracy of dev_examples.tsv is: 0.625
+Confusion Matrix:
+         |   n   p |
+         |   e   o |
+         |   g   s |
+         |   a   i |
+         |   t   t |
+         |   i   i |
+         |   v   v |
+         |   e   e |
+---------+---------+
+negative | <61> 79 |
+positive |  26<114>|
+---------+---------+
+(row = reference; col = test)
+
+dataset_examples.tsv
+
+The accuracy of dev_examples.tsv is: 0.6211477151965994
+Confusion Matrix:
+         |   n   p |
+         |   e   o |
+         |   g   s |
+         |   a   i |
+         |   t   t |
+         |   i   i |
+         |   v   v |
+         |   e   e |
+---------+---------+
+negative |<390>551 |
+positive | 162<779>|
+---------+---------+
+(row = reference; col = test)
+
+model1
+dev_examples.tsv
+0.7428571428571429
+         |   n   p |
+         |   e   o |
+         |   g   s |
+         |   a   i |
+         |   t   t |
+         |   i   i |
+         |   v   v |
+         |   e   e |
+---------+---------+
+negative | <77> 63 |
+positive |   9<131>|
+---------+---------+
+(row = reference; col = test)
+
+test_examples.tsv
+0.736318407960199
+         |   n   p |
+         |   e   o |
+         |   g   s |
+         |   a   i |
+         |   t   t |
+         |   i   i |
+         |   v   v |
+         |   e   e |
+---------+---------+
+negative |<109> 92 |
+positive |  14<187>|
+---------+---------+
+(row = reference; col = test)
+
+model2
+dev_examples.tsv
+0.7607142857142857
+         |   n   p |
+         |   e   o |
+         |   g   s |
+         |   a   i |
+         |   t   t |
+         |   i   i |
+         |   v   v |
+         |   e   e |
+---------+---------+
+negative |<111> 29 |
+positive |  38<102>|
+---------+---------+
+(row = reference; col = test)
+
+test_examples.tsv
+0.6965174129353234
+         |   n   p |
+         |   e   o |
+         |   g   s |
+         |   a   i |
+         |   t   t |
+         |   i   i |
+         |   v   v |
+         |   e   e |
+---------+---------+
+negative |<133> 68 |
+positive |  54<147>|
+---------+---------+
+(row = reference; col = test)
+
+model3
+dev_examples.tsv
+0.5464285714285714
+         |   n   p |
+         |   e   o |
+         |   g   s |
+         |   a   i |
+         |   t   t |
+         |   i   i |
+         |   v   v |
+         |   e   e |
+---------+---------+
+negative | <15>125 |
+positive |   2<138>|
+---------+---------+
+(row = reference; col = test)
+
+test_examples.tsv
+0.5422885572139303
+         |   n   p |
+         |   e   o |
+         |   g   s |
+         |   a   i |
+         |   t   t |
+         |   i   i |
+         |   v   v |
+         |   e   e |
+---------+---------+
+negative | <21>180 |
+positive |   4<197>|
+---------+---------+
+(row = reference; col = test)
+
+model4
+dev_examples.tsv
+0.7285714285714285
+         |   n   p |
+         |   e   o |
+         |   g   s |
+         |   a   i |
+         |   t   t |
+         |   i   i |
+         |   v   v |
+         |   e   e |
+---------+---------+
+negative |<118> 22 |
+positive |  54 <86>|
+---------+---------+
+(row = reference; col = test)
+
+test_examples.tsv
+0.7189054726368159
+         |   n   p |
+         |   e   o |
+         |   g   s |
+         |   a   i |
+         |   t   t |
+         |   i   i |
+         |   v   v |
+         |   e   e |
+---------+---------+
+negative |<166> 35 |
+positive |  78<123>|
+---------+---------+
+(row = reference; col = test)
+
+dev_examples.tsv
+0.7285714285714285
+         |   n   p |
+         |   e   o |
+         |   g   s |
+         |   a   i |
+         |   t   t |
+         |   i   i |
+         |   v   v |
+         |   e   e |
+---------+---------+
+negative |<118> 22 |
+positive |  54 <86>|
+---------+---------+
+(row = reference; col = test)
+
+test_examples.tsv
