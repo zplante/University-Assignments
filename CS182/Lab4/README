@@ -1,0 +1,37 @@
+CMPS182
+Lab4
+Zac Plante (zplante)
+
+INTRO
+
+========================================================================================
+
+Included are 5 files. lab4_create.sql creates the tables for the assignment. lab4_data_loading.sql puts data into those tables. These are provided file that have been unaltered and should run as expected. fixStatusFunction.pgsql creates a stored function on the server to be used by the application. It is run with \i fixStatusFunction while on the Postgresql server. SalesRecordsApplication.java is a class that acts as an application using the data base. RunSalesRecordsApplication intializes the app and run some tests, as well as printing the input and output of that test. These are compiled with javac RunSalesRecordsApplication.java and run with java RunSalesRecordsApplication.
+
+
+
+
+DRIVER
+
+========================================================================================
+
+Not included in this zip file is the JDBC driver. That must be downloaded from  https://jdbc.postgresql.org/download/postgresql-42.2.5.jar and put into your CLASSPATH with the command "export CLASSPATH=/path/to/postgresql-42.2.5.jar:.". 
+
+
+
+
+BEFORE RUNNING THE APP
+
+=========================================================================================
+
+The database must be set up before the app can be run. Log into the server, make sure the SEARCH_PATH is set to SCHEMA Lab4, and run \i lab4_create.sql, \i lab4_data_loading.sql, and \i fixStatusFunction.pgsql. Now tha tables have been created and filled, and the necissary stored function has been created.
+
+Finally, you need to add your log in creditials to RunSalesRecordsApplication.java. set the username and password variables to your username and password. Now the java app is ready to be comiled and run.
+
+
+
+OUTPUTS AND TESTING
+
+==========================================================================================
+
+Currently, RunSalesRecordsApplication runs the three functions in SalesRecordsApplication with the given test values. The test values are tored in varaibles so they can be changed for testing. After they have been run, it prints the output along with the given input and function name.

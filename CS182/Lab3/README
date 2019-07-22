@@ -1,0 +1,7 @@
+CMPS182
+Lab3
+Zac Plante (zplante)
+
+Included are 9 files, lab3_create.sql,lab3_data_loading.sql, combine.sql, foreign.sql, general.sql, unittests.sql, createview.sql, queryview.sql, and createindex.sql. lab3_create.sql and lab3_data_loading.sql are given files and unchanged, so they will behave as expected. combine.sql begins a transaction, then updates Customers from NewCustomers wherever the customerID mathces. It then inserts the customerIDs not already in the table as new tuples. foreign.sql and general.sql add constraints onto the table, foreign keys for Sales and Payments and certain checks respectively. unittests.sql contains unit tests for checking that those constraints are behaving properly. It also contains comments on which tests will pass and fail. createview.sql creates a ClearedPayments view and queryview.sql runs the "GreatCustomers" query over it. The query is run twice when the file is called, with the required delete statement inbetween. Both responses are included in the file. The responses are diffrent because removing the tuples from Payments changes the the valuse in ClearedPayments, since ClearedPayments is not a table and only refrences the valuse in Payments. Finally, createindex.sql creates an index over Sales for customerID and dayDate. Preformance theoretically should have improved when I used it, but given that the tables are so small and the speed of my machine, it was not noticable to me.
+
+All files are run using \i *filename*.

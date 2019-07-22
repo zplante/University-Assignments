@@ -1,0 +1,5 @@
+CMPS182
+Lab1
+Zac Plante (zplante)
+
+Included are two files, create.sql and load_data_lab1.sql. load_data_lab1.sql is a given file and unchanged, so it will behave as expected. create.sql creates the 6 needed tables and is run using the command \i create.sql. The file assumes a Lab1 Schema already exists and that it is the default. Running the file will drop and recreate the Schema upon each run.

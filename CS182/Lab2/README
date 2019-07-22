@@ -1,0 +1,5 @@
+CMPS182
+Lab2
+Zac Plante (zplante)
+
+Included are 7 files, create.sql,load_data_lab2.sql, and queries 1-5. load_data_lab2.sql is a given file and unchanged, so it will behave as expected. create.sql creates the 6 needed tables and is run using the command \i create.sql. These tables are the same as in lab1, but now have the proper constraints discussed in the lab. The file assumes a Lab2 Schema already exists and that it is the default. Running the file will drop and recreate the Schema upon each run. The 5 query files will run the 5 respective queries in the lab instructions. They are run using \i query#.sql, where # is the query you wish to run.
