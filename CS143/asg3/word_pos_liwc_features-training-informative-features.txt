@@ -1,0 +1,21 @@
+Most Informative Features
+                    rude = 1              negati : positi =     28.3 : 1.0
+              overpriced = 1              negati : positi =     15.7 : 1.0
+                   bland = 1              negati : positi =     15.7 : 1.0
+           ('RB', 'VBD') = 3              negati : positi =     15.0 : 1.0
+           ('VBD', 'TO') = 3              negati : positi =     14.2 : 1.0
+                    back = 2              negati : positi =     13.0 : 1.0
+          ('NNS', 'VBD') = 3              negati : positi =     13.0 : 1.0
+              understand = 1              negati : positi =     13.0 : 1.0
+                 charged = 1              negati : positi =     12.3 : 1.0
+                    said = 2              negati : positi =     12.3 : 1.0
+        Negative Emotion = 3              negati : positi =     12.2 : 1.0
+                informed = 1              negati : positi =     11.7 : 1.0
+ ('service', 'friendly') = 1              positi : negati =     11.7 : 1.0
+          ('VBD', 'VBN') = 3              negati : positi =     11.2 : 1.0
+                    cozy = 1              positi : negati =     11.0 : 1.0
+                 awesome = 1              positi : negati =     11.0 : 1.0
+         ('never', 'go') = 1              negati : positi =     11.0 : 1.0
+                 problem = 1              negati : positi =     10.6 : 1.0
+                 manager = 1              negati : positi =     10.6 : 1.0
+      ('pretty', 'good') = 1              negati : positi =     10.3 : 1.0
